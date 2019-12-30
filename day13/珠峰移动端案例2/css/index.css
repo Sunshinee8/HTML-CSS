@@ -1,0 +1,162 @@
+body{
+    background-color: #f8f8f8;
+}
+header {
+    height: 1.19rem;
+    width: 100%;
+    background: #333;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+   
+}
+
+header .logo {
+    float: left;
+    width: 2.1rem;
+    height: 0.62rem;
+    background: url("../images/logo.png") left center no-repeat;
+    background-size: cover;
+    margin-top: 0.23rem;
+}
+
+header .menu {
+    float: right;
+    width: 0.36rem;
+    height: 0.32rem;
+    background: url("../images/menu.png") center center no-repeat;
+    background-size: cover;
+    margin-top: 0.4rem;
+}
+
+/* binner */
+
+.swiper-container {
+    width: 6.4rem;
+    height: 3.41rem;
+    margin-top: 1.1rem;
+}
+
+#binner1 {
+    width: 6.4rem;
+    height: 3.41rem;
+    background: url("../images/banner.png") center center no-repeat;
+    background-size: cover;
+}
+
+#binner2 {
+    width: 6.4rem;
+    height: 3.41rem;
+    background: url("../images/banner2.png") center center no-repeat;
+    background-size: cover;
+}
+
+#binner3 {
+    width: 6.4rem;
+    height: 3.41rem;
+    background: url("../images/banner.png") center center no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding: 0 0.2rem;
+    
+}
+
+/* 主体 */
+
+main h3 {
+    color: #4C4B4B;
+    font-size: 0.26rem;
+    background: url("../images/book.png") left center no-repeat;
+    background-size: 0.29rem 0.35rem;
+    margin: 0.33rem 0;
+    padding-left: 0.5rem;
+}
+main .mainUl{
+margin-bottom: 1.5rem;
+}
+main .mainUl li .classImg {
+    width: 6rem;
+    height: 2.8rem;
+    background: url("../images/课程1.png") center center no-repeat;
+    background-size: cover;
+}
+
+main .mainUl li .text {
+    width: 6rem;
+    text-align: center;
+}
+main .mainUl li {
+    box-shadow: 0 0.05rem 0.06rem 0 rgba(178,178,178,0.75);
+    margin:0.5rem 0;
+   
+}
+main .mainUl li h4 {
+    font-size: 0.28rem;
+    margin: 0.30rem 0;
+    color: #777;
+}
+
+main .mainUl li .price {
+    font-size: 0.28rem;
+    color: #ed3a3a;
+    padding-bottom: 0.3rem;
+}
+
+/* 底部 */
+footer{
+    width: 100%;
+    height: 1.07rem;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background-color: #f8f8f8;
+
+}
+footer ul{
+    height: 1.07rem;
+}
+footer ul li{
+    height: 1.07rem;
+    width: 33.3%;
+    float: left;
+    margin-top: 0.21rem;
+}
+footer ul li a{
+   display: block;
+   color: #ABABAB;
+   font-size: 0.16rem;
+}
+footer .icon{
+    width: 0.46rem;
+    height: 0.32rem;
+    background:url("../images/inoc1.png") center center no-repeat;
+    background-size: cover;
+    margin:0 auto;
+    margin-bottom: 0.11rem;
+}
+footer .text{
+ text-align: center;
+}
+footer .icon2{
+    width: 0.49rem;
+    height: 0.32rem;
+    background:url("../images/class.png") center center no-repeat;
+    background-size: cover;
+    margin:0 auto;
+    margin-bottom: 0.11rem;
+}
+footer .icon3{
+    width: 0.49rem;
+    height: 0.35rem;
+    background:url("../images/people.png") center center no-repeat;
+    background-size: cover;
+    margin:0 auto;
+    margin-bottom: 0.11rem;
+}

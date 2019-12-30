@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        /* background-color: lightcoral; */
+        background: url("dog.png") center center no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .box:hover{
+        /* 以（水平 方向）x轴旋转，*/
+        /* transform: rotateX(200deg); */
+        /* 以（垂直 绕圈圈）y轴旋转 */
+        /* transform: rotateY(200deg); */
+        /* 整体旋转 */
+        transform: rotateZ(300deg);
+        transition: all 1s linear;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

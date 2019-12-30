@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #333;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 240px;
+            height: 240px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 100px;
+           
+            /* align-content: flex-start; */
+        }
+
+        .dice {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 2px lavender inset;
+            border: 7px solid lightgray;
+          
+            padding: 5px;
+            box-sizing: border-box;
+            /* flex-shrink: 2; */
+        }
+
+        .diceOne {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .diceOne .dian {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #333;
+           
+            align-self: center;
+        }
+
+        .diceTwo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .dian {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #333;
+            box-shadow: 0px 0px 1px 1px #000;
+        }
+
+        .diceTwo .dian1 {
+            align-self: flex-start;
+        }
+
+        .diceTwo .dian2 {
+            align-self: flex-end;
+            /* flex-grow: 3; */
+        }
+
+        .diceThree {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .diceThree .dianThree2 {
+            align-self: center;
+        }
+
+        .diceThree .dianThree3 {
+            align-self: flex-end;
+        }
+
+        .diceFour {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+        }
+        .diceFour .one{
+            width: 100px;
+            height: 50px;
+            display: flex;
+            flex-shrink: 1;
+            justify-content: space-between;
+            /* align-content: flex-start; */
+            align-items: flex-start;
+        }
+        .diceFour .two{
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dice diceOne">
+            <div class="dian">
+
+            </div>
+        </div>
+        <div class="dice diceTwo">
+            <div class="dian dian1"></div>
+            <div class="dian dian2"></div>
+        </div>
+        <div class="dice diceThree">
+            <div class="dian dianThree1"></div>
+            <div class="dian dianThree2"></div>
+            <div class="dian dianThree3"></div>
+
+        </div>
+        <div class="dice diceFour">
+            <div class="diceFourIN one">
+                <div class="dian dianFour1"></div>
+                <div class="dian dianFour2"></div>
+            </div>
+            <div class="diceFourIN two">
+                <div class="dian dianFour3"></div>
+                <div class="dian dianFour3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

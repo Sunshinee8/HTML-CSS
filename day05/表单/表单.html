@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      textarea{
+          /* 触发时不产生蓝色边框线 */
+          outline: none;
+          /* 禁止拖拽大小 */
+          resize:none;
+      }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <!-- 文本框  placeholder提示文字 autofocus 自动获取焦点 required 自动校验-->
+        <input type="text" placeholder="请输入文本" autofocus required>
+        <!-- 密码框 -->
+        <input type="password" placeholder="请输入密码">
+        <!-- 提交 -->
+        <input type="submit">
+        <!-- 重置 -->
+        <input type="reset">
+        <!-- 按钮 -->
+        <input type="button" value="支付">
+        <!-- 单选框 checked默认选中-->
+        <label for="man">男</label>
+        <input type="radio" id="man" name="1"> 
+        <label for="woman">女</label>
+        <input type="radio" id="woman" name="1" checked>
+        <!-- 多选框 -->
+        <input type="checkbox">
+        <!-- button按钮 -->
+        <button>支付</button>
+        <!-- 文本域 -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- 下拉框 selected 默认选中 disabled 禁止选中 -->
+        <select name="" id="">
+            <option value="">郑州</option>
+            <option value="" selected>上海</option>
+            <option value="" disabled>北京</option>
+        </select>
+    </form>
+</body>
+
+</html>

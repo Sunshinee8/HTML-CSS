@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("image/back.webp") no-repeat;
+            /* background-position: top right; */
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .wukong,.bajie {
+            width: 200px;
+            height: 180px;
+            background: url("image/悟空.png") no-repeat;
+            position: absolute;
+            top: 352px;
+            left: 36px;
+            animation: wukong 2s steps(8) infinite,wukongrun 40s infinite;
+        }
+        
+        @keyframes wukong {
+            100% {
+                background-position: -1600px;
+            }
+        }
+        @keyframes wukongrun {
+            0%{
+               transform: translateX(100vw); 
+            }
+            100% {
+               transform: translateX(-780px);
+            }
+        }
+
+        .bajie {
+            background: url("image/八戒.png") no-repeat;
+            position: absolute;
+            top: 352px;
+            left: 600px;
+            animation: bajie 2s steps(8) infinite,bajierun 40s infinite;
+        }
+           /* 标准 */
+        @keyframes bajie {
+            100% {
+                background-position: -1600px;
+            }
+        }
+        /* 欧朋 */
+        @-o-keyframes bajie{
+
+        }
+        /* 火狐 */
+        @-moz-keyframes bajie{
+
+        }
+        /* 谷歌 */
+        @-webkit-keyframes bajie{
+
+        }
+        /* @-ms-viewport bajie{
+
+        } */
+      
+        @keyframes bajierun {
+            0%{
+               transform: translateX(100vw); 
+            }
+            100% {
+               transform: translateX(-770px);
+            }
+        }
+        .tangseng {
+            width: 170px;
+            height: 240px;
+            background: url("image/唐僧.png") no-repeat;
+            position: absolute;
+            top: 352px;
+            left: 300px;
+            animation: tangseng 2s steps(8) infinite,tangsengrun 40s infinite;
+        }
+
+        @keyframes tangseng {
+            100% {
+                background-position: -1360px;
+            }
+        }
+        @keyframes tangsengrun {
+            0%{
+               transform: translateX(100vw); 
+            }
+            100% {
+               transform: translateX(-570px);
+            }
+        }
+
+        
+
+        .saceng {
+            width: 210px;
+            height: 200px;
+            background: url("image/沙僧.png") no-repeat;
+            position: absolute;
+            top: 352px;
+            left: 800px;
+            animation: saceng 2s steps(8) infinite,sacengrun 40s infinite;
+        }
+
+        @keyframes saceng {
+            100% {
+                background-position: -1680px;
+            }
+        }
+
+        @keyframes sacengrun {
+            0%{
+               transform: translateX(100vw); 
+            }
+            100% {
+               transform: translateX(-700px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="1.mp3" controls autoplay></audio>
+    <div class="wukong"></div>
+    <div class="tangseng"></div>
+    <div class="bajie"></div>
+    <div class="saceng"></div>
+</body>
+
+</html>

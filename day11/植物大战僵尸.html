@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 1300px;
+            height: 600px;
+            background: url("1.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        /* vw 代表一个窗口的宽 */
+        /* vh 代表一个窗口的高 */
+        .dead {
+            width: 200px;
+            height: 314px;
+            background: url("sprites.png") no-repeat;
+            animation: run 1s steps(10) infinite,
+                run2 10s linear infinite;
+        }
+        @keyframes run {
+            100% {
+                background-position: -2000px, 0;
+            }
+        }
+        @keyframes run2 {
+            0% {
+                transform: translate(100vw, 0);
+            }
+            100% {
+                transform: translate(-200px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <div class="dead">
+
+        </div>
+</body>
+
+</html>

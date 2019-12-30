@@ -1,0 +1,375 @@
+/* 公共内容 */
+.top h2{
+    margin-top:  20px;
+}
+/* 第一个面板内容 */
+.content1{
+    padding-top: 15px;
+    height: 150px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    display: none;
+}
+.title{
+    text-indent: 20px;
+    font-size: 14px;
+    color: #1e1e1e;
+    line-height: 20px;
+}
+.div_des{
+    width: 180px;
+    margin-left: 20px;
+}
+.div_bottom{
+    width: 220px;
+    margin:25px 10px 0px 10px; 
+}
+
+.des{
+    font-size: 12px;
+    color: #9e9d9d;
+    line-height: 20px;
+    
+}
+.div_bottom .left{
+    float: left;
+    color: #c71b1b;
+    font-size: 12px;
+}
+.div_bottom .right{
+    float: right;
+    color: #868484;
+}
+/* 第二个面板内容 */
+.content2{
+    width: 250px;
+    height: 103px;
+    border: 1px solid lightgray;
+    /* display: none; */
+    background: white;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+/* 头部 */
+
+.zhufeng-top{
+    width: 1200px;
+    height: 52px;
+    margin: 16px auto;
+    font-size: 14px;
+}
+.zhufeng-top a{
+    color: #2a2a2a;
+}
+.zhufeng-top a:hover{
+    color: #2b7dd1;
+}
+.zhufeng-top .left{
+    width: 176px;
+    height: 52px;
+    float: left;
+    /* margin: 16px 0px; */
+}
+.zhufeng-top .left img{
+    width: 176px;
+    height: 52px;
+   
+}
+.zhufeng-top .center{
+    width: 640px;
+    height: 52px;
+    float: left;
+    margin-left: 45px;
+    
+}
+
+.zhufeng-top .center .center-ul li{
+    height: 52px;
+    line-height:52px;
+    padding-left: 40px;
+    float: left;
+    box-sizing: border-box;
+}
+.zhufeng-top .right{
+    float: right;
+    width: 240px;
+    height: 52px;
+    position: relative;
+}
+.zhufeng-top .right .right-ul li{
+float: left;
+height: 52px;
+line-height:52px;
+margin-left:40px;
+}
+.zhufeng-top .right .right-ul img{
+    width: 24px;
+    height: 22px;
+    position: absolute;
+    top: 14px;
+    right: 205px;
+}
+/* 版心 */
+.bannerBox{
+    width:1200px ;
+    height: 360px;
+    margin: 0 auto;
+    background: lightblue;
+    position: relative;
+    overflow: hidden;
+}
+.bannerBox .bannerIn {
+  width: 4800px;
+  height: 360px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.bannerBox .bannerIn li {
+   float: left;
+}
+
+.bannerBox .binnerLeft{
+    width: 240px;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-indent: 30px;
+    background: rgba(105, 101, 101, 0.3);
+    box-sizing: border-box;
+}
+.bannerBox .binnerLeft li{
+    height: 72px;
+    line-height: 74px;
+    /* position: relative; */
+}
+
+.bannerBox .binnerLeft a{
+    color: #fdfdfe;
+    font-size: 14px;
+    display: block;
+}
+
+.bannerBox .binnerLeft li{
+    background: url("../images/arrow.png") no-repeat;
+    background-position: 200px center;
+}
+.bannerBox .binnerLeft li:hover{
+    background-color: rgba(105, 101, 101, 0.8);
+}
+
+.bannerBox .binnerLeft li::after{
+    content: "";
+    width: 190px;
+    height: 1px;
+    background-color: rgba(252, 252, 252, 0.3);
+    display: block;
+    margin-left: 22px;
+    /* position: absolute; */
+    top: 72px;
+    left: 20px;
+}
+.bannerBox .binnerLeft .last::after{
+    content: "";
+    display: none;
+}
+.bannerBox .binnerLeft li:hover::after{
+    content: "";
+    display: none;
+}
+.content{
+    width: 575px;
+    height:360px;
+    background: lightblue;
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    display: none;
+}
+.bannerBox .binnerLeft li:hover .content{
+    display: inline-block;
+}
+/* 实战推荐 */
+.recommend{
+    width: 1200px;
+    height: 235px;
+    margin: 0 auto;
+    background: white;
+}
+.recommend .top{
+   height: 50px;
+   line-height: 50px;
+}
+
+.recommend .bottom{
+    width: 1200px;
+    height: 185px;
+}
+.recommend .bottom .bottom-ul li{
+    width: 251px;
+    height: 185px;
+    float: left;
+    margin-left: 65px;
+    position: relative;
+}
+.recommend .bottom li:hover .content1 {
+   display: block;
+}
+.recommend .bottom li:hover .content2 {
+    display: none;
+ }
+.recommend .bottom .bottom-ul .first-li{
+    margin-left: 0px;
+}
+.recommend .bottom .bottom-ul li img{
+    width: 251px;
+    height: 141px;
+}
+.recommend .bottom .bottom-ul li .content1{
+    width: 251px;
+    height: 151px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 34px;
+}
+/* 免费好课 */
+.goodClass{
+    width: 1200px;
+    height: 235px;
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 20px;
+}
+.goodClass .top{
+   height: 50px;
+   line-height: 50px;
+}
+
+.goodClass .bottom{
+    width: 1200px;
+    height: 185px;
+}
+.goodClass .bottom .bottom-ul li{
+    width: 251px;
+    height: 185px;
+    float: left;
+    margin-left: 65px;
+    position: relative;
+}
+.goodClass .bottom li:hover .content1 {
+   display: block;
+}
+.goodClass .bottom li:hover .content2 {
+    display: none;
+ }
+.goodClass .bottom .bottom-ul .first-li{
+    margin-left: 0px;
+}
+.goodClass .bottom .bottom-ul li img{
+    width: 251px;
+    height: 141px;
+}
+.goodClass .bottom .bottom-ul li .content1{
+    width: 251px;
+    height: 151px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 34px;
+}
+
+.foot{
+    width: 100%;
+    height: 450px;
+    background: rgba(105, 101, 101, 0.1);
+    position: relative;
+}
+.imgModule{
+    width: 92%;
+    height: 400px;
+    margin:0 auto ; 
+}
+.leftModule{
+    float: left;
+    margin-top: 15px;
+}
+.leftModule img{
+    width: 224px;
+    height: 387px;
+}
+.imgModule-ul li{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.recommendImg{
+    width: 250px;
+    height: 184px;
+}
+/* 第二个面板内容 */
+.foot .recommendLi{
+    position: relative;
+}
+.foot .content3{
+    width: 250px;
+    height: 103px;
+    border: 1px solid lightgray;
+    /* display: none; */
+    background: white;
+    position: absolute;
+    top: 80px;
+
+}
+.rightModule{
+    /* float: right; */
+    width: 255px;
+    height: 383px;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+.rightModule img{
+    width: 298px;
+    height: 386px;
+}
+
+/* 底部 */
+.foot-div{
+    width: 100%;
+    height: 275px;
+    margin: 0 auto;
+    background:  rgba(3, 3, 3, 0.8);
+}
+.foot-div .dl-div{
+    width: 80%;
+    margin-left: 0px;
+}
+.foot-div .dl-div dl{
+    float: left;
+    margin-top: 54px;
+    margin-left: 100px;
+    line-height: 30px;
+}
+.foot-div .dl-div .col-links{
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+.foot-div .dl-div dl{
+    color: darkgray;
+}
+.icon{
+    float: right;
+    margin-right: 59px;
+    margin-top: 70px;
+}
+.icon-ul{
+    width:225px ;
+}
+.icon-ul li{
+    float: left;
+}

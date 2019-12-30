@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .box1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .box2 {
+            background: green;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .content{
+            width: 300px;
+            /* height: 200px; */
+            /* overflow:hidden; */
+            background: gold;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background: black;
+            float: left;
+        }
+        /* 伪元素 */
+        .clearboth::after{
+            content: "";
+            font-size: 0px;
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+       /* .last{
+           /* 清除左右浮动造成的影响 
+           clear:both;
+       } */
+       
+        p{
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <!-- 在子元素中，宽度可以继承父级，高度是继承不来的 一旦浮动 就不在继承 -->
+    <div class="content clearboth">
+        <div class="box"></div>
+        <!-- <div class="last"></div> -->
+    </div>
+    <div>
+        <img src="../day05/1.jpg" alt="" width="250px" height="200px">
+        <p>
+                去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次去年10月中旬，找的是网上口碑非常好的云南阿诺，玩的是她订制的路线，阿诺服务也很周到、主要是很热情，提前沟通好行程，到了云南基本不需要自己再操心了，真的很省心，云南旅游相当开心的一次
+        </p>
+    </div>
+</body>
+
+</html>

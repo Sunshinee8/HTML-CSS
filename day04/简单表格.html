@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 0 auto;
+            text-align: center;       
+            /* 合并边框线 */
+            border-collapse:collapse;     
+            /* 在写宽度的前提下，让各行宽度平均分布 */
+            table-layout:fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>sss</span>
+        <!-- cellpadding 内容到边框的距离  -->
+        <!-- cellspacing 单元格到单元格的距离 -->
+        <table border="1" width="700px" cellpadding="30"  cellspacing="20">
+            <tr>
+                <th>姓名/内容</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+                <th>历史</th>
+                <th>总分</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td rowspan="2">总分</td>
+            </tr>
+            <tr>
+                <td>张斯</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <!-- <td>总分</td> -->
+            </tr>
+            <tr>
+                <td colspan="6">合计</td>
+                <!-- <td>100</td>
+                <td>100</td>
+                <td>100</td> -->
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

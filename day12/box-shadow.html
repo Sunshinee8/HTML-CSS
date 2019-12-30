@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .sun{
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius:50%;
+        /* 第一个值：阴影x轴水平方向 
+        第二个值：阴影Y轴垂直方向 
+        第三个值：模糊度  
+        第四个值：大小 
+        第五个值：颜色
+        第六个值：inset 代表内阴影 outset 代表外阴影*/
+        box-shadow: 0 0px 100px 10px white inset,
+        0 0px 100px 10px white;
+    }
+    .yun{
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        border-radius:232% 570% 141% 622%;
+        position: absolute;
+        background: white;
+        box-shadow: 0 0px 100px 10px white;
+    }
+    .xing{
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+        box-shadow:0px 0px 10px 5px white;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        ie:ms
+        谷歌：-webkit
+        欧朋：-o-
+        火狐：-moz-
+     -->
+     <div class="sun"></div>
+     <div class="xing"></div>
+
+     
+     <!-- <div class="yun"></div> -->
+</body>
+</html>

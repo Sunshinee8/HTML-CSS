@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        /* background: lawngreen; */
+        background-image:url("../../day03/1.png");
+        background-repeat: no-repeat;
+        /* 平铺方式 no-repeat 不平铺 repeat-x x轴平铺 repeat-y y轴平铺 */
+        /* background-repeat: repeat-y; */
+        /* background-position: right bottom; */
+        /* 居中 */
+        background-position: center center;
+    }
+    .box1,.box2,.box3{
+        width: 300px;
+        height: 300px;
+        border: 5px dashed lawngreen;
+        padding:30px;
+        background-repeat:no-repeat;
+        background-image:url("../../day03/1.png");
+        display: inline-block;
+    }
+    .box1{
+        /* 背景图片从border起始 */
+        background-origin:border-box;
+    }
+    .box2{
+        /*从padding起始*/
+        background-origin:padding-box;
+    }
+    .box3{
+        /* 从内容起始 */
+        background-origin:content-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .main{
+            background: #333;
+            height: 40px;
+            font-size: 12px;
+            line-height: 40px;
+        }
+        .main a{
+            color: #b0b0b0;
+        }
+     .content{
+         height: 40px;
+         width: 90%;
+         margin: 0 auto;
+     }
+     .content .left{
+         /* width: 200px; */
+         height: 40px;
+         float: left;
+     }
+     .content .right{
+         height: 40px;
+         float:right;
+     }
+     content .left a,content .left span{
+         float: left;
+     }
+     .content .left span,.content .right span{
+         margin:0 5px;
+         color: #424242;
+     }
+    
+     .content a:hover{
+         color: white;
+     }
+     .cart a{
+         width: 120px;
+         height: 40px;
+         line-height: 40px;
+         color: #b0b0b0;
+         text-align: center;
+         margin-left: 5px;
+         background: #424242;
+         display: inline-block;
+     }
+     .right .msg,.right .cart{
+         float: left;
+     }
+     .content .right .cart a:hover{
+         background: white;
+         color: #ff6700;
+     }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="left">
+                   <a href="">小米商城</a><span>|</span> 
+                   <a href="">MIUI</a><span>|</span>
+                   <a href="">IoT</a><span>|</span>
+                   <a href="">云服务</a><span>|</span>
+                   <a href="">金融</a><span>|</span>
+                   <a href="">有品</a><span>|</span>
+                   <a href="">小爱开放平台</a><span>|</span> 
+                   <a href="">企业团购</a><span>|</span> 
+                   <a href="">资质证照</a><span>|</span> 
+                   <a href="">协议规则</a><span>|</span> 
+                   <a href="">下载app</a><span>|</span>
+                   <a href="">Select Location</a>
+            </div>
+            <div class="right">
+                <div class="msg">
+                        <a href="">注册</a><span>|</span> 
+                        <a href="">登录</a><span>|</span>
+                        <a href="">消息通知</a><span>|</span>
+                </div>
+                 <div class="cart"><a href="">购物车（0）</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            width: 700px;
+            height: 700px;
+            border: 1px solid lightcoral;
+            list-style: none;
+            /* 转换为flex布局 */
+            display: flex;
+            /* 横轴从右到左 */
+            flex-direction: row-reverse;
+            /* 横轴 默认 */
+            flex-direction: row;
+            /* 竖轴 从下到上 */
+            /* flex-direction: column-reverse; */
+            /* 竖轴 */
+            /* flex-direction: column; */
+            /* 按照盒子的尺寸，自己计算盒子换行  flex-wrap: wrap-reverse;*/
+            flex-wrap: wrap;
+            /* flex-direction flex-wrap  */
+            flex-flow:row wrap;
+            /* 在主轴上项目的排列方式 开始中间结束  环绕：space-around 
+            平均环绕   space-evenly;
+            最两面无间距：space-between*/
+            justify-content: space-around;
+            align-items: flex-start;
+            /* align-items: flex-end; */
+            /* align-content: center; */
+        }
+
+        li {
+            width: 100px;
+            height: 100px;
+            /* flex-shrink: 0; */
+        }
+        
+        ul li:nth-child(2n) {
+            background: lightgreen;
+        }
+
+        ul li:nth-child(2n+1) {
+            background: lightsalmon;
+        }
+        /* 某一个占的比例 */
+        ul li:nth-child(6){
+            /* 放大 */
+            /* flex-grow: 2; */
+            /* flex-shrink: 0; */
+        }
+        /* 某一个定义它排列的顺序 */
+        ul li:nth-child(3){
+            /* order: 5; */
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+</body>
+
+</html>

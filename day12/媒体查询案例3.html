@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .clearfix::after {
+            contain: "";
+            display: block;
+            font-size: 0px;
+            height: 0;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .main {
+            width: 100%;
+            text-align: center;
+        }
+
+        .main>li {
+            width: 12.5%;
+            height: 20px;
+            line-height: 20px;
+            float: left;
+            border: 1px solid lightcoral;
+            box-sizing: border-box;
+        }
+
+        /* 大于等于1200 的时候显示8个
+           大于等于900 小于1200的时候显示4个
+           大于等于768px 小于900的时候显示2个
+           小于768px 的时候显示一个
+         */
+        @media screen and (min-width: 900px) and (max-width:1200px) {
+            .main>li {
+                width: 25%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width:900px) {
+            .main>li {
+                width: 50%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .main>li {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="main clearfix">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+
+</html>

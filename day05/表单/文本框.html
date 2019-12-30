@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div_content {
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        li {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .title {
+            width: 70px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        input {
+            height: 30px;
+            width: 250px;
+            /*去除蓝色边框线*/
+            outline:none;
+        }
+        [type="checkbox"]{
+            width: 10px;
+            height: 10px;
+        }
+        .read_s{
+            margin-left: 2px;
+            font-size: 12px;
+        }
+        .div_read{
+            text-align: center;
+        }
+        .yzm{
+            width: 150px;
+        }
+        .btn_yzm{
+            background: rgb(234, 236, 238);
+            width: 100px;
+            height: 33px;
+            line-height: 33px;
+        }
+        #sub_btn{
+            width: 270px;
+            height: 40px;
+            line-height: 40px;
+            background: rgb(79, 137, 230);
+            margin-left: 70px;
+            color: white;
+            font-size: 15px;
+        }
+        /* [type="checkbox"]
+        {
+            vertical-align:middle;
+        } */
+        [type="checkbox"],.read_s{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div_content">
+        <ul>
+            <li class="title">名字</li>
+            <li><input type="text" placeholder="请输入名字" required></li>
+        </ul>
+        <ul>
+            <li class="title">手机号</li>
+            <li><input type="text" placeholder="可用于登录和找回密码" required></li>
+        </ul>
+        <ul>
+            <li class="title">密码</li>
+            <li><input type="password" placeholder="请设置登录密码" required></li>
+        </ul>
+        <ul>
+            <li class="title">验证码</li>
+            <li><input class="yzm" type="text" placeholder="请输入验证码" required>
+            <button class="btn_yzm">验证码</button>
+            </li>
+        </ul>
+        <div class="div_read"><input type="checkbox"><span class="read_s">阅读并接受 <a href="">《百度用户协议》</a> </span>
+        </div>
+        <br>
+        <button type="submit" id="sub_btn">注册</button>
+    </div>
+</body>
+
+</html>

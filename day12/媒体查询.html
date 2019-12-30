@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 100px;
+            height: 100px;
+            background: rebeccapurple;
+        }
+        /*屏幕最大为550px时改变*/
+        @media screen and (max-width: 550px){
+            .main{
+                width: 150px;
+                height: 150px;
+                background: red;
+            }
+        }
+        /* 当屏幕最大为800px 最小为500px 时 改变 */
+        @media screen and (min-width:500px) and (max-width: 800px)
+        {
+           body{
+               background: rosybrown;
+           }
+        }
+    </style>
+</head>
+
+<body>
+<div class="main"></div>
+</body>
+
+</html>

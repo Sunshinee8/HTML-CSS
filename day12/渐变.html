@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .线性渐变{
+        width: 100px;
+        height: 100px;
+        background:linear-gradient(left,green,yellow );
+        /* 从右到左 */
+        background: -webkit-linear-gradient(right,green,yellow );
+        background: -webkit-linear-gradient(right top,green,yellow );
+        background: -webkit-linear-gradient(40deg,green,yellow );
+        /* 10%到60%是过渡色 */
+        background: -webkit-linear-gradient(green 12%,yellow 90%);
+    }
+    .径向渐变{
+        width: 400px;
+        height: 200px;
+        /* background: radial-gradient(circle,red 10%,green 80%); */
+        background: -webkit-radial-gradient(circle,red 10%,green 80%);
+    }
+    </style>
+</head>
+<body>
+    <div class="线性渐变">
+
+    </div>
+    <div class="径向渐变">
+
+        </div>
+</body>
+</html>

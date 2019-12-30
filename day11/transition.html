@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background: brown;
+        /* 过渡方向 */
+        transition-property:height;
+        /* 过渡的时间 */
+        transition-duration: 1s;
+        /* 过渡的曲线 */
+        transition-timing-function: linear;
+        /* 延迟时间 */
+        transition-delay: 0.5s;
+
+        transition: all 1s linear 0.5s;
+        -webkit-transition:  all 1s linear 0.5s;
+        -moz-transition: all 1s linear 0.5s ;
+        -o-transition:  all 1s linear 0.5s;
+        -ms-transition: all 1s linear 0.5s
+    }
+    .box:hover{
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

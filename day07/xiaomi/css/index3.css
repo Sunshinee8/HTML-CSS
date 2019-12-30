@@ -1,0 +1,72 @@
+/* 重置样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.md {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.phoneBox {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.phoneBox .top {
+    height: 58px;
+    line-height: 58px;
+}
+
+h3 {
+    float: left;
+    font-weight: 200;
+}
+
+.phoneIn .top .allLinks {
+    float: right;
+    color: #333;
+}
+
+.phoneIn .left {
+    width: 234px;
+    height: 614px;
+    background: lightskyblue;
+    float: left;
+    background: url("../images/1.webp") center center no-repeat;
+    background-size: cover;
+}
+
+.phoneIn .right {
+    width: 992px;
+    height: 614px;
+    float: left;
+}
+
+.phoneIn .right li {
+    width: 234px;
+    height: 300px;
+    background: white;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}

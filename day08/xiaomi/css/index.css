@@ -1,0 +1,99 @@
+.bannerBox {
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerBox .bannerIn {
+    width: 3678px;
+    height: 460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bannerBox .bannerIn img {
+    width: 100%;
+}
+
+.bannerBox .bannerIn li {
+    width: 1226px;
+    float: left;
+}
+
+/* 左边的快速导航 */
+
+.sliderBar {
+    width: 234px;
+    height: 460px;
+    /* 透明背景  前面代表颜色， 后面代表透明度*/
+    background: rgba(105, 101, 101, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.sliderBar>li {
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    text-indent: 20px;
+    background: url("../images/arrow.png") 200px center no-repeat;
+    display: block;
+}
+
+.sliderBar>li a {
+    color: #fff;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+}
+
+.sliderBar>li:hover {
+    background-color: #ff6700;
+    /* cursor:pointer; */
+}
+
+.sliderBar .content {
+    width: 600px;
+    height: 460px;
+    background: cornflowerblue;
+    position: absolute;
+    left: 234px;
+    top: 0px;
+    display: none;
+}
+
+.sliderBar>li:hover .content {
+    display: inline-block;
+}
+
+.bannerBox .leftArrow, .bannerBox .rightArrow {
+    width: 41px;
+    height: 69px;
+    background: palegreen;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    background: url("../images/icon.png");
+}
+
+.bannerBox .leftArrow {
+    left: 234px;
+    background-position: -84px 0;
+}
+
+.bannerBox .rightArrow {
+    right: 0px;
+    background-position: -126px 0;
+}
+.bannerBox .leftArrow:hover{
+    background-position:0 0;
+}
+.bannerBox .rightArrow:hover{
+    background-position: -42px 0;
+}

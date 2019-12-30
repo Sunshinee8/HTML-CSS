@@ -1,0 +1,265 @@
+/* 一屏的高度 */
+
+html, body, .binnerBox {
+    height: 100%;
+}
+
+.binnerBox {
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#page1 {
+    background: url("../images/hero-bg-1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#page2 {
+    background: url("../images/hero-bg-2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#page3 {
+    background: url("../images/hero-bg-3.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/* 导航 定位元素的宽度不能继承*/
+
+.nav {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.md {
+    width: 80%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.navIn {
+    height: 56px;
+    margin-top: 12px;
+}
+
+.navIn .logo {
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.navIn .logo svg {
+    display: block;
+}
+
+.navIn .navLinks {
+    float: right;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.navIn .navLinks a {
+    color: #fff;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.navIn .navLinks li {
+    float: left;
+}
+
+/* 广告文字 */
+
+.advBox {
+    /* background: lightgreen; */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+/* .advIn{
+    background: yellowgreen;
+} */
+
+.advIn h3 {
+    font-size: 66px;
+    color: #fff;
+    line-height: 1;
+}
+
+.advIn a {
+    font-size: 22px;
+    width: 295px;
+    color: #fff;
+    height: 59px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 59px;
+    display: block;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.recomment li {
+    width: 25%;
+    height: 260px;
+    border: 2px solid #fff;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    box-sizing: border-box;
+    float: left;
+    background: url("../images/promo-02.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.recomment li:first-child {
+    border-left: none;
+}
+
+.recomment li:last-child {
+    border-right: none;
+}
+
+.recomment li a h4 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 32px;
+}
+
+/* 图标 */
+
+.icomDiv {
+    height: 140px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.icomIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 45px 0; */
+}
+
+.flexBox {
+    /* 均分 */
+    flex: 1;
+    font-size: 0.16rem;
+    display: flex;
+}
+
+.icomDiv .one .icon {
+    height: 50px;
+    width: 50px;
+    background: url("../images/icon-wechat.png") center center no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.icomDiv .text, .icomDiv h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.icomDiv .one .text {
+    align-self: center;
+}
+
+.icomDiv .two {
+    display: flex;
+    justify-content: center;
+}
+
+.icomDiv .two .icon {
+    height: 50px;
+    width: 50px;
+    background: url("../images/icon-rp.png") center center no-repeat;
+    /* 一般触碰，就会停止 */
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.icomDiv .two .text {
+    align-self: center;
+}
+
+.icomDiv .three {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icomDiv .three .icon {
+    height: 50px;
+    width: 50px;
+    background: url("../images/icon-credit.png") center center no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.icomDiv .three .text {
+    align-self: center;
+}
+
+/* 当宽度小于1080px时和最大641 右侧 导航栏消失。热门推荐宽度为50% */
+
+@media screen and (max-width:1080px) and (min-width:641px) {
+    .md {
+        width: 100%;
+    }
+    .navIn .navLinks {
+        display: none;
+    }
+    .recomment li {
+        width: 50%;
+    }
+    .advBox .md h3 {
+        font-size: 360%;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .contentIN {
+        width: 100%;
+        margin: 0px
+    }
+}
+
+/* 当宽度小于641时 右侧 导航栏消失。热门推荐宽度为50% */
+
+@media screen and (max-width:640px) {
+    .md {
+        width: 100%;
+    }
+    .navIn .navLinks {
+        display: none;
+    }
+    .recomment li {
+        width: 100%;
+    }
+    .advBox .md h3 {
+        font-size: 360%;
+    }
+}
+
+@media screen and (max-width:432px) {
+    .md {
+        width: 100%;
+    }
+}

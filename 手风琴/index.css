@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.demo {
+    margin: 100px auto;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.demo li {
+    height: 40px;
+    overflow: hidden;
+    border-top: 2px solid #d95d45;
+    transition: all 0.2s linear;
+}
+
+/* .demo ul li:first-child{
+    border:none;
+} */
+
+/*  */
+
+/* 利用兄弟选择器，向下寻找，上面的li样式是不起作用的 */
+
+.demo li+li {
+    border-top: 2px solid #d95d45;
+}
+
+.demo ul li div {
+    height: 200px;
+    background: #474141;
+    padding: 10px;
+}
+
+.demo li:hover {
+    height: 100px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.demo li p {
+    height: 40px;
+    line-height: 40px;
+    background: #e5654c;
+    color: white;
+    padding-left: 10px;
+    position: relative;
+}
+
+.demo ul li p::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: #e5654c transparent transparent transparent;
+    top: 40px;
+}

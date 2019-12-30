@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: blueviolet;
+        }
+
+        .main {
+            width: 400px;
+            height: 400px;
+            /* background: lightgreen; */
+            margin: 0 auto;
+        }
+
+        .gun {
+            width: 10px;
+            height: 200px;
+            background: black;
+            position: relative;
+            margin: 0 auto;
+            transform-origin: top center;
+            animation: run 4s ease infinite;
+        }
+
+        .qiu {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: gold;
+            position: absolute;
+            top: 200px;
+            /* 球宽度减杆的宽度，之后除2 */
+            left: -20px;
+            /* 阴影 */
+            box-shadow: 0 0px 80px rgba(72, 95, 135, 100);
+        }
+
+        @keyframes run {
+            0% {
+                transform: rotate(-60deg);
+            }
+            25% {
+                transform: rotate(60deg);
+                transition: all 0.5s linear;
+            }
+            75% {
+                transform: rotate(0deg);
+                transition: all 0.5s linear;
+            }
+            100% {
+                transform: rotate(-60deg);
+                transition: all 0.5s linear;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="gun">
+            <div class="qiu">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .par {
+            width: 200px;
+            height: 200px;
+            background: lightcoral;
+        }
+
+        .box {
+            height: 30px;
+            background: lightgreen;
+            float: left;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            background: lightgreen;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.脱离文档流
+        2.针对父级
+    3。正常来说，宽度是根据父级继承的，但是浮动之后，就不在继承父级，而是由自身内容觉得
+  4. 行内元素 写宽高不起作用，可一旦浮动，就会起作用
+浮动的本质，为了实现图文混排-->
+    <div class="par">
+        <div class="box">22</div>
+    </div>
+    <span>试试</span>
+</body>
+
+</html>

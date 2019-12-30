@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box{
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        /* 背景图片 */
+        background-image: url("../lufei.png");
+        /* 不平铺 */
+        /* background-repeat:no-repeat; */
+        /* 以x轴平铺 */
+        background-repeat:repeat-X;
+        /* 以y轴平铺 */
+        background-repeat:repeat-y;
+        /* 同时平铺（默认） */
+        background-repeat:repeat;
+           /* 水平         垂直 */
+        /* left right/ top center bottom; */
+        /* background-position:right bottom; */
+        /* background-position: center center; */
+        /* background-position:200px 200px; */
+        background-position:50% 50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

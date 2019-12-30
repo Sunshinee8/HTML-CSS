@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        /* 第2个 */
+        ul>li:nth-child(2) {
+            background: lightblue;
+        }
+
+        /* 倒数第2个 */
+        ul>li:nth-last-child(2) {
+            background: lightcoral;
+        }
+
+        /* 第一个 */
+        ul>li:first-child {
+            background: gold;
+        }
+
+        /* 最后一个 */
+        ul>li:last-child {
+            background: green;
+        }
+
+        /* 偶数行隔行变色 */
+        ul>li:nth-child(even) {
+            background: red;
+        }
+
+        /* 奇数行隔行变色 */
+        ul>li:nth-child(odd) {
+            background: royalblue;
+        }
+        /*所有子元素*/
+        .main>p:nth-child(4){
+            background: salmon;
+        }
+        /* 针对类型的元素 */
+        .main>h3:nth-of-type(4){
+            background: saddlebrown;
+        }
+        /* 最后第几个 */
+        .main>h1:nth-last-of-type(1){
+            background: slateblue;
+        }
+        
+        /* 最后一个 */
+        .main>p:last-of-type{
+            background: red;
+        }
+        /* 第一个 */
+        .main>p:first-of-type{
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <div class="main">
+        <h3>h3</h3>
+        <h3>h3</h3>
+        <h3>h3</h3>
+        <p>p1</p>
+        <h1>h1</h1>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p2</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    /* 通配符选择器 权重0*/
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    
+    
+    /* 标签选择器 权重1*/
+    div{
+        width:200px;
+        border: 2px dashed lightcoral;
+    }
+    /*属性选择器 权重10*/
+    [index="a"]
+    {
+        background: lightgreen;
+    }
+    /*id选择器 权重100*/
+    #p_id{
+        background-color: magenta;
+    }
+    /* 类选择器 权重10*/
+    .p_class{
+        background-color: maroon;
+    }
+    /*子选择器 权重11*/
+    .div_>p{
+        background-color: midnightblue;
+    }
+    /*后代选择器 权重11*/
+    .div_ span{
+        color:red;
+    }
+    /*分组选择器 权重1*/
+     h2,h3{
+         color: rosybrown;
+     }
+     /*交集选择器(多个选择器) 20*/
+     .text.p2{
+         background-color: rosybrown;
+     }
+     /*相邻选择器 相邻 向下 p*/
+     h2+p{
+         color: red;
+     }
+     /*通用兄弟选择器 向下 h2*/
+     h2~h2{
+         color: blue;
+     }
+     /*伪类选择器*/
+     /*默认链接颜色*/
+     a:link{
+       color: blueviolet;
+     }
+     /* 访问过后的颜色 */
+     a:visited{
+         color: crimson;
+     }
+     /* 鼠标滑上 */
+     a:hover{
+         color: darkgoldenrod;
+     }
+     a:active{
+         color:darkseagreen;
+     }
+    </style>
+</head>
+<body>
+    <div class="div_">
+      <span>span标签</span>
+    </div>  
+    <p index="a" class="p_class" id="p_id">
+        段落
+    </p>
+    <p index>
+        段落2
+    </p>
+    <p class="text ">交际选择器</p>
+    <p class="text p2">交集选择器</p>
+    <h2>h2biao</h2>
+    <p>相邻选择器p</p>
+    <h4>eee</h4>
+    <h2>h2相邻选择器</h2>
+    <h3>h3biaoq</h3>
+    <a href="">百度</a>
+</body>
+</html>

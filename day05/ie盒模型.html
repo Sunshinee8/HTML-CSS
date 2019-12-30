@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width: 200px;
+        height: 200px;
+        background: gold;
+        padding-top: 20px;
+        /* ie盒模型 会自动计算，自适应，宽高不用变 */
+        box-sizing:border-box;
+        /* 默认 标准盒模型 content+padding 的值 宽高得变*/
+        box-sizing: content-box;
+    }
+    span{
+        background: coral;
+        display: inline-block;
+        width:300px;
+        height:300px;
+        /* 顺时针 上   右   下   左 */
+        padding: 20px 40px 60px 80px;
+        /*      上/下   左/右 */
+        padding: 30px 50px;
+        /* 上/下/左/右 */
+        padding: 40px;
+        /*      上  左/右  下 */
+        padding:30px 50px 70px ;
+    }
+    </style>
+</head>
+<body>
+    <div>box1</div>
+    <span>span333333333333</span>
+</body>
+</html>

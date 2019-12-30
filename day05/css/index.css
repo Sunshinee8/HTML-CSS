@@ -1,0 +1,11 @@
+body{
+    background: wheat;
+}
+.box1{
+    width: 500px;
+    height: 500px;
+    /* 背景图片 */
+    /* background: url("../1.jpg"); */
+    background: url("../../day04/作业.png");
+}
+

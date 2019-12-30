@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: lightgrey;
+        }
+    .box{
+        width: 100px;
+        height: 100px;
+        background: cornflowerblue;
+        /* 动画名称 运动时间 运动曲线 延迟时间 运动次数infinite */
+        /* animation: run1 4s linear infinite; */
+          /*  当运动结束，停留在最后一针 */
+        /* animation: run1 4s linear 1s forwards; */
+           /* 如果动画有延迟想要让动画快速的从第一帧开始执行 */
+        /* animation: run1 4s linear 1s backwards; */
+        animation: run1 2s linear 1s both;
+    }
+    @keyframes run1{
+        10%{
+            transform:translate(0,0);
+        }
+        30%{
+            transform:translate(500px,0);
+            background: crimson;
+        }
+        100%{
+            transform: translate(500px,500px);
+        }
+        /* 80%{
+            transform: translate(0,500px);
+        } */
+        /* 10%{
+            transform: translate(0,0);
+        } */
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

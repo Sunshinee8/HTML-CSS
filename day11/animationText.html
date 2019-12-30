@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    body{
+        background: url("back.jpg") no-repeat;
+        background-size: cover;
+    }
+    .main{
+        width: 500px;
+        height: 500px;
+        border: 2px dashed white;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .box{
+    
+        width: 100px;
+        height: 100px;
+        background: yellow;
+        animation: runing 2s linear infinite;
+        border-radius: 50%;
+    }
+     @keyframes runing{
+         24%{
+             background: limegreen;
+         }
+         25%{
+             transform: translate(400px,0) scale(1.1);
+             background: olivedrab;
+
+         }
+         48%{
+             background: mediumspringgreen;
+         }
+         50%{
+             transform: translate(400px,400px) scale(1);
+             background: orange;
+         }
+         52%{
+             background: lightblue;
+         }
+         75%{
+             transform: translate(0px,400px) scale(1.2);
+             background:yellowgreen ;
+         }
+         79%{
+             background:orange;
+         }
+         95%{
+             background: lightsalmon;
+         }
+         100%{
+             transform: translate(0,0) scale(1);
+             background: limegreen;
+         }
+     }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

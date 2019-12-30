@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 伪元素，content必须要有 */
+    p::before{
+        content: "2019年12月2号";
+        font-size: 20px;
+        color: gold;
+    }
+    p::after{
+        content: "，可是有风啊";
+        font-size: 20px;
+        color: hotpink;
+    }
+    </style>
+</head>
+<body>
+   <p>天气好晴朗</p>
+</body>
+</html>

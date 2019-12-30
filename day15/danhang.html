@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            
+        }
+        .p1 {
+            /* 单行显示diandian */
+            width: 100px;
+            border: 1px solid lightblue;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 文字超出显示的方式是点 */
+            text-overflow: ellipsis;
+            /* 不换行 */
+            white-space: nowrap;
+        }
+
+        .p2 {
+            width: 100px;
+            border: 1px solid lightblue;
+            /* 多行显示点点 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            /* 控制让哪一行显示... */
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            user-select: none;
+            /* 间距 */
+            letter-spacing: 3px;
+        }
+        .p3{
+            /* 字母间隙 */
+            letter-spacing: 3px;
+        }
+        .p4{
+            /* 单词间隙 */
+            word-spacing: 3px;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">大家害人个人，四个人无关如果热韩国而韩国黑人阿偶岗位爱人色弱去</p>
+    <p class="p2">大家害人个人，四个人无关如果热韩国而韩国黑人阿偶岗位爱人色弱去大家害人个人，四个人无关如果热韩国而韩国黑人阿偶岗位爱人色弱去</p>
+    <p class="p3">大家害人个人，四个人</p>
+    <p class="p4">hello,world</p>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 固定写法 */
+        .clearfix:after {
+            content: "";
+            font-size: 0;
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .clearfix {
+            /* 兼容ie: 6; */
+            *zoom: 1;
+        }
+
+        .par {
+            width: 500px;
+
+            background: lightgreen;
+
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background: lightpink;
+            float: left;
+        }
+
+        .par1 {
+            width: 500px;
+            height: 500px;
+            background: lawngreen;
+        }
+
+        .last {
+            clear: both
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 浮动的问题会造成父级的高度浮动坍陷 下面的模块就会上去？
+    1.设置高度/* height: 100px; */           
+    2 给浮动元素的父级设置overflow：hidden
+    3. 【增加<div class="last"></div>】
+    在浮动元素的父级盒子的末尾添加一个标签，然后给这个标签设置样式clear：both  （left right both）
+    4 谁浮动就给谁的父级元素增加伪元素-->
+    <div class="par clearfix">
+        <div class="box"></div>
+
+    </div>
+    <div class="par1"></div>
+</body>
+
+</html>

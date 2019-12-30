@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(86, 140, 240);
+        }
+
+        li {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .main {
+            width: 500px;
+            height: 350px;
+            margin: 0 auto;
+            /* border: 1px solid rgb(183, 183, 189, 0.342); */
+            /* border-radius: 20px; */
+            /* padding-top: 50px; */
+            /* margin-top: 50px; */
+        }
+
+        input {
+            height: 35px;
+            width: 300px;
+            border: 1px solid rgb(183, 183, 189, 0.342);
+            text-indent: 1em;
+        }
+
+        .text {
+            width: 80px;
+            text-align: right;
+            color: rgb(112, 110, 110);
+            font-weight: 700;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        [type="button"] {
+            width: 80px;
+        }
+
+        .yzm {
+            width: 150px;
+        }
+
+        #checkbox {
+            width: 13px;
+            height: 13px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .span_read {
+            margin-left: 10px;
+            font-size: 10px;
+            padding-left: 75px;
+            height: 30px;
+            line-height: 30px;
+
+        }
+
+        [type="submit"] {
+            background: rgb(86, 140, 240);
+            color: white;
+            border-radius: 3px;
+        }
+
+        .div_btn {
+            height: 100px;
+            line-height: 60px;
+            margin-left: 90px;
+            
+        }
+        .yzm_btn {
+            width: 145px;
+            height: 38px;
+            background: rgb(241, 239, 239);
+            color: rgb(112, 110, 110);
+        }
+
+        /* #lab {
+            font-size: 12px;
+            height: 15px;
+            line-height: 15px;
+            padding-top: 20px;
+            color: rgb(149, 147, 147);
+        } */
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="main">
+            <ul>
+                <li class="text">
+                    <label for="">用户名</label>
+                </li>
+                <li>
+                    <input type="text" placeholder="请设置用户名">
+                </li>
+                <!-- <li>
+                    <label for="" id="lab">
+                        <p>设置后不可更改</p>
+                        <p>中英文均可，最长14个英文和7个汉字</p>
+                    </label>
+                </li> -->
+            </ul>
+            <ul>
+                <li class="text">
+                    <label for="">手机号</label>
+                </li>
+                <li>
+                    <input type="text" placeholder="可用于登录和找回密码">
+                </li>
+            </ul>
+            <ul>
+                <li class="text">
+                    <label for="">密码</label>
+                </li>
+                <li>
+                    <input type="password" placeholder="请设置登录密码">
+                </li>
+            </ul>
+            <ul>
+                <li class="text">
+                    <label for="">验证码</label>
+                </li>
+                <li>
+                    <input class="yzm" type="text" placeholder="请输入验证码">
+                    <input class="yzm_btn" type="button" value="获取短信验证码">
+                </li>
+            </ul>
+            <span class="span_read"><input id="checkbox" type="checkbox">阅读并接受 <a href="">《百度用户协议》</a>及 <a
+                    href="">《百度隐私权保护声明》</a> </span>
+            <div class="div_btn">
+                <input type="submit" value="注册" height="200px">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
